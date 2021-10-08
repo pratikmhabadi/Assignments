@@ -19,7 +19,5 @@ public class Count {
         for (Map.Entry<Character, Integer> mapmap : map.entrySet()) {
             System.out.println(mapmap.getKey() + "=" + mapmap.getValue());
         }
-
-
     }
 }
