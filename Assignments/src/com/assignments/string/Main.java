@@ -27,5 +27,7 @@ public class Main {
             System.out.println("We can make a good string by removing "+entry.getValue()+" of the "+actual+ " "+entry.getKey());
         }
 
+        System.out.println("corrected String:"+stringList);
+
     }
 }
