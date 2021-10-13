@@ -1,7 +1,7 @@
 package com.assignments.string;
 
 public class Main1 {
-    public static boolean sameStarChar(String string) {
+   /* public static boolean sameStarChar(String string) {
         int index = string.indexOf("*");
         if (index < 1 || index > string.length() - 1) {
             StringBuilder string1 = new StringBuilder(string);
@@ -18,6 +18,21 @@ public class Main1 {
                 if (string.contains(s.trim())) {
                     return true;
                 }
+            }
+        }
+        return false;
+    }*/
+
+    public static boolean sameStarChar(String string){
+        if(string.startsWith("*")){
+           String s= string.substring(string.indexOf("*")+1);
+           return sameStarChar(s);
+        }else{
+            int index =string.indexOf("*");
+            char ch1 = string.charAt(index-1);
+            char ch2 = string.charAt(index+1);
+            if(ch1==ch2){
+                return true;
             }
         }
         return false;
